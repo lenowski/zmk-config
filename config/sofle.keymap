@@ -13,15 +13,9 @@
 #define RAISE 2
 #define ADJUST 3
 
-&lt {
-    quick-tap-ms = <150>;
-    retro-tap;
-};
+&lt { quick-tap-ms = <150>; };
 
-&mt {
-    quick-tap-ms = <150>;
-    retro-tap;
-};
+&mt { quick-tap-ms = <150>; };
 
 / {
     // Activate ADJUST layer by pressing raise and lower
