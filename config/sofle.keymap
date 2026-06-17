@@ -29,6 +29,16 @@
         };
     };
 
+    macros {
+        fpfb: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LA(A) &kp A>;
+
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -51,7 +61,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans            &trans                                &trans         &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans                                &trans         &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans                                &trans         &trans      &trans  &trans  &trans  &trans
+&trans  &fpfb   &trans  &trans  &trans            &trans                                &trans         &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans     &trans          &trans     &trans         &trans      &trans  &trans  &trans  &trans
                 &trans  &trans  &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_ALT    &kp ENTER  &kp BACKSPACE  &kp DELETE  &trans  &trans
             >;
