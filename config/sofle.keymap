@@ -33,9 +33,15 @@
         fpfb: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LA(A) &kp A>;
-
+            bindings = <&kp LA(A) &kp A>;
             label = "NEW_MACRO";
+        };
+
+        pmaa: pmaa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(T) &kp LA(G) &kp G>;
+            label = "PMAA";
         };
     };
 
@@ -61,7 +67,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans            &trans                                &trans         &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans                                &trans         &trans      &trans  &trans  &trans  &trans
-&trans  &fpfb   &trans  &trans  &trans            &trans                                &trans         &trans      &trans  &trans  &trans  &trans
+&trans  &fpfb   &trans  &trans  &trans            &pmaa                                 &trans         &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans     &trans          &trans     &trans         &trans      &trans  &trans  &trans  &trans
                 &trans  &trans  &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_ALT    &kp ENTER  &kp BACKSPACE  &kp DELETE  &trans  &trans
             >;
