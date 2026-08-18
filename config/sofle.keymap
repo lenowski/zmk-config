@@ -63,9 +63,9 @@
 
             bindings = <
 &kp F1     &kp F2         &kp F3                &kp F4     &kp F5                 &kp F6                             &kp F7        &kp F8            &kp F9          &kp F10            &kp F11    &kp F12
-&none      &none          &kp LESS_THAN         &kp EQUAL  &kp GREATER_THAN       &kp PERCENT                        &kp CARET     &kp LEFT_BRACKET  &kp DOLLAR      &kp RIGHT_BRACKET  &none      &none
+&none      &none          &kp LESS_THAN         &kp EQUAL  &kp GREATER_THAN       &kp CARET                          &kp DOLLAR    &kp LEFT_BRACKET  &kp HASH        &kp RIGHT_BRACKET  &none      &none
 &kp GRAVE  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION                    &kp QUESTION  &kp LEFT_BRACE    &kp UNDERSCORE  &kp RIGHT_BRACE    &kp COLON  &kp DOUBLE_QUOTES
-&trans     &none          &kp ASTERISK          &kp PLUS   &kp SLASH              &kp HASH         &trans    &trans  &kp AT_SIGN   &kp PIPE          &kp TILDE       &kp AMPERSAND      &none      &trans
+&trans     &none          &kp SLASH             &kp PLUS   &kp ASTERISK           &kp PERCENT      &trans    &trans  &kp AT_SIGN   &kp AMPERSAND     &kp TILDE       &kp PIPE           &none      &trans
                           &trans                &trans     &trans                 &trans           &trans    &trans  &trans        &trans            &trans          &trans
             >;
 
